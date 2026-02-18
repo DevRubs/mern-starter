@@ -5,6 +5,7 @@ A personal MERN stack starter template with MongoDB, Express.js, React, and Node
 ## ✨ Features
 
 - ⚛️ React 19 with Vite
+- 🎨 Tailwind CSS v4 for modern styling
 - 🚀 Express backend (MVC pattern)
 - 🍃 MongoDB with Mongoose
 - 🔄 Nodemon & ESLint for development
@@ -13,8 +14,22 @@ A personal MERN stack starter template with MongoDB, Express.js, React, and Node
 
 ```
 mern-starter/
-├── client/    # React frontend
-└── server/    # Express backend
+├── client/              # React frontend with Tailwind CSS
+│   ├── src/
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Route-level components
+│   │   ├── hooks/       # Custom React hooks
+│   │   ├── services/    # API calls
+│   │   └── utils/       # Helper functions
+│   ├── tailwind.config.js
+│   └── vite.config.js
+└── server/              # Express backend (MVC pattern)
+    ├── controllers/     # Business logic
+    ├── models/          # Mongoose schemas
+    ├── routes/          # API endpoints
+    ├── services/        # Database operations
+    ├── middlewares/     # Auth, validation
+    └── config/          # Database, environment
 ```
 
 ## 🛠️ Setup
@@ -37,6 +52,8 @@ cd client
 npm install
 npm run dev
 ```
+
+**Note:** Tailwind CSS v4 is pre-configured. Use Tailwind utility classes directly in your components for styling.
 
 - 🌐 Frontend: `http://localhost:5173`
 - 🔧 Backend: `http://localhost:5000`
